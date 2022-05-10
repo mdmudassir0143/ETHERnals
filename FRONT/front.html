@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>ETHERnals</title>
+  <link rel="icon" href="../images/J-modified.png">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" />
+  <script src="https://kit.fontawesome.com/20ce0034c6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./front.css" />
+  <script src="https://kit.fontawesome.com/f948b69e81.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="progressbar"></div>
+
+  <section id="title">
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href=""><i class="fa-brands fa-ethereum"></i> ETHERnals</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Blog</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-light btn-lg download-btn" onclick="location.href='../app/index.html'">
+            App
+          </button>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="head">Best Crowd Funding Platform On Blockchain.</h1>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="Title-img" src="../images/12.png" alt="iphone-mockup" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- progress
+  <section id="progress">
+  <h1 class="donat">Donation Progress</h1>
+  <div class="wrapper">
+    <div class="card">
+      <div class="circle">
+        <div class="bar"></div>
+        <div class="box"><span></span></div>
+      </div>
+      <div class="text">Ether</div>
+    </div>
+    <div class="card USDT">
+      <div class="circle">
+        <div class="bar"></div>
+        <div class="box"><span></span></div>
+      </div>
+      <div class="text">USDT</div>
+    </div>
+    <div class="card USDC">
+      <div class="circle">
+        <div class="bar"></div>
+        <div class="box"><span></span></div>
+      </div>
+      <div class="text">USDC</div>
+    </div>
+  </div>
+</section>
+
+  <script>
+    let options = {
+      startAngle: -1.55,
+      size: 150,
+      value: 0.24,
+      fill: { gradient: ['#a445b2', '#fa4299'] }
+    }
+    $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function (event, progress, stepValue) {
+        $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+      });
+    $(".USDT .bar").circleProgress({
+      value: 0.17
+    });
+    $(".USDC .bar").circleProgress({
+      value: 0.35
+    });
+  </script>
+
+
+
+
+ -->
+
+  <!-- Features -->
+
+  <section id="features">
+    <h1 class="feature">Features</h1>
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3>Easy to use</h3>
+        <p>Lorem Ipsum has been the industry's.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Transparent</h3>
+        <p>Lorem Ipsum has been the industry's.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3>Secure</h3>
+        <p>Lorem Ipsum has been the industry's.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h3>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book.
+          </h3>
+          <img class="Dog" src="../images/J-modified.png" alt="satoshi" />
+          <em class="nam">Satoshi Nakamoto</em>
+        </div>
+        <div class="carousel-item">
+          <h3 class="testimonial-text">
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book.
+          </h3>
+          <img class="testimonial-image" src="../images/J-modified.png" alt="satoshi" />
+          <em class="nam">Satoshi Nakamoto</em>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  </section>
+
+  <!-- Roadmap -->
+  <section class="roadmap">
+    <h1 class="road">Roadmap</h1>
+    <div class="containerr">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2022</h3>
+              <h1 class="heed">Heading 1</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus
+                aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2022</h3>
+              <h1 class="heed">Heading 2</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus
+                aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2022</h3>
+              <h1 class="heed">Heading 3</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus
+                aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2022</h3>
+              <h1 class="heed">Heading 4</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus
+                aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+<!-- launch your Organisations -->
+
+<section class="organ">
+  <h1 class="texxt">Launch Your Organisation</h1>
+  <div class="contanr">
+    <form action="mail.php">
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label name="Fname">First Name</label>
+          </div>
+          <div class="input-data">
+             <input type="text" placeholder="Fname" required>
+             <div class="underline"></div>
+             <label Lname="Lname">Last Name</label>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" placeholder="Lname" required>
+             <div class="underline"></div>
+             <label email="email">Email Address</label>
+          </div>
+          <div class="input-data">
+             <input type="text" placeholder="Email Address" required>
+             <div class="underline"></div>
+             <label website="website">Website Name</label>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data textarea">
+             <textarea placeholder="Type your message" rows="8" cols="80" required></textarea>
+             <!-- <br /> -->
+             <div class="underline"></div>
+             <label about="about">About Your Organisation</label>
+             <!-- <br /> -->
+          </div>
+       </div>
+       <div class="form-row submit-btn">
+        <div class="input-data">
+           <div class="inner"></div>
+           <input type="submit" value="submit">
+        </div>
+     </div>
+    </form>
+ </div>
+</section>
+
+
+  <!-- Partners -->
+
+  <section id="partners">
+    <h1 class="partner">Our Partners</h1>
+    <div class="prt">
+      <div>
+        <img class="prts" src="../images/ether.png" alt="xyz" />
+      </div>
+      <div>
+        <img class="prts" src="../images/ether.png" alt="xyz" />
+      </div>
+      <div>
+        <img class="prts" src="../images/ether.png" alt="xyz" />
+      </div>
+    </div>
+  </section>
+
+  <!-- team  -->
+
+  <section id="team">
+    <h1 class="teamm">Team Members</h1>
+    <div class="teem row">
+      <div class="card col-lg-4" style="width: 18rem;">
+        <img src="../images/d2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DEGEN</h5>
+          <p class="card-text">Web Developer and Blockchain Enthusiast.</p>
+          <a href="#" class="btn btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="btn btn-dark"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="btn btn-dark"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width: 18rem;">
+        <img src="../images/d1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DEGEN</h5>
+          <p class="card-text">Web Developer and Blockchain Enthusiast.</p>
+          <a href="#" class="btn btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="btn btn-dark"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="btn btn-dark"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="card col-lg-4" style="width: 18rem;">
+        <img src="../images/d3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DEGEN</h5>
+          <p class="card-text">Web Developer and Blockchain Enthusiast.</p>
+          <a href="#" class="btn btn-dark"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="btn btn-dark"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="btn btn-dark"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul class="foot">
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul class="foot">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Medium</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="foot">
+            <li><a href="#">Nfts</a></li>
+            <li><a href="#">Staking</a></li>
+            <li><a href="#">Tokenomics</a></li>
+            <li><a href="#">All Organisations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer id="footer">
+    <p>© Copyright | <i class="fa-brands fa-ethereum"></i> ETHERnals</p>
+    <p>Created by Mohammad Mudassir | All Rights Reserved</p>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./block.js"></script>
+
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop(),
+      dh = $(document).height(),
+      wh = $(window).height();
+      scrollPercent = (scroll / (dh-wh)) *100;
+      $('#progressbar').css('height', scrollPercent + '%');
+    })
+  </script>
+
+
+</body>
+
+</html>
